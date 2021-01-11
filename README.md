@@ -10,36 +10,48 @@ Processing".
 ## "Benchmark"
 
 ```
-# Build (can't compare build times, as module ordering affects the results)
-mvn clean package
+# Build
+./gradlew clean build installDist distTar
 ```
 
 ```
 # Get the file sizes
-find . -name '*.jar' |xargs ls -l |grep -v original |grep -v common
+find . -name '*.tar' |xargs ls -lh |grep -v original |grep -v common
 ```
 
 ```
 # Execution time
 
-time java -jar ./bootique2/target/bootique2-*.jar
-time java -jar ./cayennedi/target/cayennedi-*.jar
-time java -jar ./dagger/target/dagger-*.jar
-time java -jar ./guice/target/guice-*.jar
-time java -jar ./owb/target/owb-*.jar
-time java -jar ./spring/target/spring-*.jar
-time java -jar ./springboot/target/springboot-*.jar
-
+time (for i in {1..10}; do ./baseline/build/install/baseline/bin/baseline; done)
+time (for i in {1..10}; do ./bootique2/build/install/bootique2/bin/bootique2; done)
+time (for i in {1..10}; do ./cayennedi/build/install/cayennedi/bin/cayennedi; done)
+time (for i in {1..10}; do ./dagger/build/install/dagger/bin/dagger; done)
+time (for i in {1..10}; do ./guice/build/install/guice/bin/guice; done)
+time (for i in {1..10}; do ./komodo/build/install/komodo/bin/komodo; done)
+time (for i in {1..10}; do ./owb/build/install/owb/bin/owb; done)
+time (for i in {1..10}; do ./spring/build/install/spring/bin/spring; done)
+time (for i in {1..10}; do ./springboot/build/install/springboot/bin/springboot; done)
+time (for i in {1..10}; do ./springboot/build/install/springboot/bin/springboot; done)
+time (for i in {1..10}; do ./spring/build/install/spring/bin/spring; done)
+time (for i in {1..10}; do ./owb/build/install/owb/bin/owb; done)
+time (for i in {1..10}; do ./komodo/build/install/komodo/bin/komodo; done)
+time (for i in {1..10}; do ./guice/build/install/guice/bin/guice; done)
+time (for i in {1..10}; do ./dagger/build/install/dagger/bin/dagger; done)
+time (for i in {1..10}; do ./cayennedi/build/install/cayennedi/bin/cayennedi; done)
+time (for i in {1..10}; do ./bootique2/build/install/bootique2/bin/bootique2; done)
+time (for i in {1..10}; do ./baseline/build/install/baseline/bin/baseline; done)
 ```
 
-## Results (Java 8)
+## Results (JDK 11)
 
-|DI|Jar w/Deps Size, KB|:arrow_down: Exec time, ms|
+|DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, s|
 |----|-----|----|
-|Dagger|46|104|
-|Cayenne DI|79|120|
-|Bootique 2|2522|244|
-|Guice|3781|328|
-|OpenWebBeans|1345|381|
-|Spring|3954|355|
-|Spring Boot|7824|1057|
+|Baseline|1.7|1.35|
+|Dagger|1.7|1.41|
+|Cayenne DI|1.8|2.05|
+|Bootique 2|4.2|4.31|
+|Guice|5.4|6.22|
+|Komodo|6.4|7.56|
+|Spring|5.5|8.36|
+|OpenWebBeans|3.0|10.02|
+|Spring Boot|9.2|26.94|

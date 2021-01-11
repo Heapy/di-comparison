@@ -1,5 +1,5 @@
-package org.objectstyle.di.service;
+package org.objectstyle.di.service
 
-public interface SubService {
-    String doIt();
+interface SubService {
+    fun doIt(): String
 }

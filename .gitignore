@@ -1,4 +1,6 @@
 *.iml
 .idea
-target
-dependency-reduced-pom.xml
+out
+build
+.gradle
+.DS_Store

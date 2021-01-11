@@ -1,7 +1,5 @@
-package org.objectstyle.di.service;
+package org.objectstyle.di.service
 
-
-public interface Service {
-
-    String doIt();
+interface Service {
+    fun doIt(): String
 }
