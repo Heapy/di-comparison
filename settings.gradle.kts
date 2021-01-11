@@ -1,5 +1,6 @@
 include("common")
 include("baseline")
+include("kodein")
 include("koin")
 include("komodo")
 include("bootique2")
