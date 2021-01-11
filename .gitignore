@@ -4,3 +4,4 @@ out
 build
 .gradle
 .DS_Store
+generated/
