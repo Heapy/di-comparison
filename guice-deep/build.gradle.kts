@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common"))
+    implementation(project(":common-deep"))
 
     implementation("com.google.inject:guice:5.0.0-BETA-1")
 }
