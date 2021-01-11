@@ -44,17 +44,31 @@ time (for i in {1..10}; do ./bootique2/build/install/bootique2/bin/bootique2; do
 time (for i in {1..10}; do ./baseline/build/install/baseline/bin/baseline; done)
 ```
 
+```
+# Lines of code
+cloc ./baseline/src
+cloc ./bootique2/src
+cloc ./cayennedi/src
+cloc ./dagger/src
+cloc ./guice/src
+cloc ./komodo/src
+cloc ./owb/src
+cloc ./spring/src
+cloc ./springboot/src
+cloc ./koin/src
+```
+
 ## Results (JDK 11)
 
-|DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, s|
-|----|-----|----|
-|Baseline|1.7|1.35|
-|Dagger|1.7|1.41|
-|Cayenne DI|1.8|2.05|
-|Koin|1.8|2.56|
-|Bootique 2|4.2|4.31|
-|Guice|5.4|6.22|
-|Komodo|6.4|7.56|
-|Spring|5.5|8.36|
-|OpenWebBeans|3.0|10.02|
-|Spring Boot|9.2|26.94|
+|DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, s|LoC|
+|----|----|----|----|
+|Baseline|1.7|1.35|7|
+|Dagger|1.7|1.41|37|
+|Cayenne DI|1.8|2.05|37|
+|Koin|1.8|2.56|16|
+|Bootique 2|4.2|4.31|52|
+|Guice|5.4|6.22|33|
+|Komodo|6.4|7.56|17|
+|Spring|5.5|8.36|23|
+|OpenWebBeans|3.0|10.02|35|
+|Spring Boot|9.2|26.94|42|
