@@ -47,6 +47,7 @@ cloc ./owb/src
 cloc ./spring/src
 cloc ./springboot/src
 cloc ./koin/src
+cloc ./kodein/src
 ```
 
 ## Results (JDK 11)
