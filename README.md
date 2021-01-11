@@ -97,12 +97,11 @@ cloc ./kodein-deep/src
 |OpenWebBeans|3.0|10.02|35|
 |Spring Boot|9.2|26.94|42|
 
-## Results for 2 classes (JDK 11)
-
+## Results for 100 classes (JDK 11)
 |DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, s|LoC|
 |----|----|----|----|
 |Baseline|1.8|2.28|107|
-|Dagger|2.69|1.41|534|
+|Dagger|2.0|2.70|534|
 |Cayenne DI||||
 |Koin||||
 |Kodein||||
