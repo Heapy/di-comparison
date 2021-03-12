@@ -1,16 +1,16 @@
-package org.objectstyle.bootique2;
+package io.heapy.bootique2;
 
 import io.bootique.cli.Cli;
 import io.bootique.command.Command;
 import io.bootique.command.CommandOutcome;
-import org.objectstyle.di.service.Service;
+import io.heapy.sample.common2.Service;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
 
 public class MainCommand implements Command {
 
-    private Provider<Service> serviceProvider;
+    private final Provider<Service> serviceProvider;
 
     @Inject
     public MainCommand(Provider<Service> serviceProvider) {
@@ -19,7 +19,7 @@ public class MainCommand implements Command {
 
     @Override
     public CommandOutcome run(Cli cli) {
-        System.out.println(serviceProvider.get().doIt());
+        System.out.println(serviceProvider.get().name());
         return CommandOutcome.succeeded();
     }
 }

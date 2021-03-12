@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.bootique2.Main")
+    mainClass.set("io.heapy.bootique2.Main")
 }
 
 repositories {

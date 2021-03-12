@@ -1,4 +1,4 @@
-package org.objectstyle.bootique2;
+package io.heapy.bootique2;
 
 import io.bootique.BQCoreModule;
 import io.bootique.BaseModule;
