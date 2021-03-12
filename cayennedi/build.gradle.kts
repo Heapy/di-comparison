@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.cayenne.Main")
+    mainClass.set("io.heapy.cayenne.Main")
 }
 
 repositories {

@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.dagger.Main")
+    mainClass.set("io.heapy.dagger.Main")
 }
 
 repositories {

@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.guice.Main")
+    mainClass.set("io.heapy.guice.Main")
 }
 
 repositories {

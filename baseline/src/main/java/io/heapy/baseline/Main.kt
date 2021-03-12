@@ -1,7 +1,7 @@
 package io.heapy.baseline
 
-import org.objectstyle.di.service.ServiceImpl
-import org.objectstyle.di.service.SubServiceImpl
+import io.heapy.di.service.ServiceImpl
+import io.heapy.di.service.SubServiceImpl
 
 fun main() {
     val s = ServiceImpl(SubServiceImpl())

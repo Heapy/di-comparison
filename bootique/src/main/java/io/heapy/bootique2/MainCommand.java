@@ -3,7 +3,7 @@ package io.heapy.bootique2;
 import io.bootique.cli.Cli;
 import io.bootique.command.Command;
 import io.bootique.command.CommandOutcome;
-import org.objectstyle.di.service.Service;
+import io.heapy.di.service.Service;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
