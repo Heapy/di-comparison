@@ -1,4 +1,4 @@
-# DI Containers Comparision
+# DI Containers Comparison
 
 Comparing a simple app varieties on different DI containers.
 
