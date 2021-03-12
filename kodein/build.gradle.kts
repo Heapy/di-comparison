@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.kodein.MainKt")
+    mainClass.set("io.heapy.kodein.MainKt")
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {

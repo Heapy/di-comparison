@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.jvm.MainKt")
+    mainClass.set("io.heapy.jvm.MainKt")
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {

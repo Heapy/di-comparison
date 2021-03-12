@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.koin.MainKt")
+    mainClass.set("io.heapy.koin.MainKt")
 }
 
 repositories {

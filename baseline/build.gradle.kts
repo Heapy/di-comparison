@@ -13,6 +13,4 @@ repositories {
 
 dependencies {
     implementation(project(":common"))
-
-    implementation(kotlin("stdlib-jdk8"))
 }

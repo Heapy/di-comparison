@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="io.heapy.sample.common2.DefaultService">
+        <constructor-arg ref="service1"/>
+    </bean>
+
+    <bean id="service1" class="io.heapy.sample.common2.DefaultService1">
+        <constructor-arg ref="service2"/>
+    </bean>
+
+    <bean id="service2" class="io.heapy.sample.common2.DefaultService2">
+        <constructor-arg ref="service3"/>
+    </bean>
+
+    <bean id="service3" class="io.heapy.sample.common2.DefaultService3">
+        <constructor-arg ref="service4"/>
+    </bean>
+
+    <bean id="service4" class="io.heapy.sample.common2.DefaultService4">
+        <constructor-arg ref="service5"/>
+    </bean>
+
+    <bean id="service5" class="io.heapy.sample.common2.DefaultService5">
+        <constructor-arg ref="service6"/>
+    </bean>
+
+    <bean id="service6" class="io.heapy.sample.common2.DefaultService6">
+        <constructor-arg ref="service7"/>
+    </bean>
+
+    <bean id="service7" class="io.heapy.sample.common2.DefaultService7">
+        <constructor-arg ref="service8"/>
+    </bean>
+
+    <bean id="service8" class="io.heapy.sample.common2.DefaultService8">
+        <constructor-arg ref="service9"/>
+    </bean>
+
+    <bean id="service9" class="io.heapy.sample.common2.DefaultService9">
+        <constructor-arg ref="service10"/>
+    </bean>
+
+    <bean id="service10" class="io.heapy.sample.common2.DefaultService10">
+        <constructor-arg ref="service11"/>
+    </bean>
+
+    <bean id="service11" class="io.heapy.sample.common2.DefaultService11">
+        <constructor-arg ref="service12"/>
+    </bean>
+
+    <bean id="service12" class="io.heapy.sample.common2.DefaultService12">
+        <constructor-arg ref="service13"/>
+    </bean>
+
+    <bean id="service13" class="io.heapy.sample.common2.DefaultService13">
+        <constructor-arg ref="service14"/>
+    </bean>
+
+    <bean id="service14" class="io.heapy.sample.common2.DefaultService14">
+        <constructor-arg ref="service15"/>
+    </bean>
+
+    <bean id="service15" class="io.heapy.sample.common2.DefaultService15">
+        <constructor-arg ref="service16"/>
+    </bean>
+
+    <bean id="service16" class="io.heapy.sample.common2.DefaultService16">
+        <constructor-arg ref="service17"/>
+    </bean>
+
+    <bean id="service17" class="io.heapy.sample.common2.DefaultService17">
+        <constructor-arg ref="service18"/>
+    </bean>
+
+    <bean id="service18" class="io.heapy.sample.common2.DefaultService18">
+        <constructor-arg ref="service19"/>
+    </bean>
+
+    <bean id="service19" class="io.heapy.sample.common2.DefaultService19">
+        <constructor-arg ref="service20"/>
+    </bean>
+
+    <bean id="service20" class="io.heapy.sample.common2.DefaultService20">
+        <constructor-arg ref="service21"/>
+    </bean>
+
+    <bean id="service21" class="io.heapy.sample.common2.DefaultService21">
+        <constructor-arg ref="service22"/>
+    </bean>
+
+    <bean id="service22" class="io.heapy.sample.common2.DefaultService22">
+        <constructor-arg ref="service23"/>
+    </bean>
+
+    <bean id="service23" class="io.heapy.sample.common2.DefaultService23">
+        <constructor-arg ref="service24"/>
+    </bean>
+
+    <bean id="service24" class="io.heapy.sample.common2.DefaultService24">
+        <constructor-arg ref="service25"/>
+    </bean>
+
+    <bean id="service25" class="io.heapy.sample.common2.DefaultService25">
+        <constructor-arg ref="service26"/>
+    </bean>
+
+    <bean id="service26" class="io.heapy.sample.common2.DefaultService26">
+        <constructor-arg ref="service27"/>
+    </bean>
+
+    <bean id="service27" class="io.heapy.sample.common2.DefaultService27">
+        <constructor-arg ref="service28"/>
+    </bean>
+
+    <bean id="service28" class="io.heapy.sample.common2.DefaultService28">
+        <constructor-arg ref="service29"/>
+    </bean>
+
+    <bean id="service29" class="io.heapy.sample.common2.DefaultService29">
+        <constructor-arg ref="service30"/>
+    </bean>
+
+    <bean id="service30" class="io.heapy.sample.common2.DefaultService30">
+        <constructor-arg ref="service31"/>
+    </bean>
+
+    <bean id="service31" class="io.heapy.sample.common2.DefaultService31">
+        <constructor-arg ref="service32"/>
+    </bean>
+
+    <bean id="service32" class="io.heapy.sample.common2.DefaultService32">
+        <constructor-arg ref="service33"/>
+    </bean>
+
+    <bean id="service33" class="io.heapy.sample.common2.DefaultService33">
+        <constructor-arg ref="service34"/>
+    </bean>
+
+    <bean id="service34" class="io.heapy.sample.common2.DefaultService34">
+        <constructor-arg ref="service35"/>
+    </bean>
+
+    <bean id="service35" class="io.heapy.sample.common2.DefaultService35">
+        <constructor-arg ref="service36"/>
+    </bean>
+
+    <bean id="service36" class="io.heapy.sample.common2.DefaultService36">
+        <constructor-arg ref="service37"/>
+    </bean>
+
+    <bean id="service37" class="io.heapy.sample.common2.DefaultService37">
+        <constructor-arg ref="service38"/>
+    </bean>
+
+    <bean id="service38" class="io.heapy.sample.common2.DefaultService38">
+        <constructor-arg ref="service39"/>
+    </bean>
+
+    <bean id="service39" class="io.heapy.sample.common2.DefaultService39">
+        <constructor-arg ref="service40"/>
+    </bean>
+
+    <bean id="service40" class="io.heapy.sample.common2.DefaultService40">
+        <constructor-arg ref="service41"/>
+    </bean>
+
+    <bean id="service41" class="io.heapy.sample.common2.DefaultService41">
+        <constructor-arg ref="service42"/>
+    </bean>
+
+    <bean id="service42" class="io.heapy.sample.common2.DefaultService42">
+        <constructor-arg ref="service43"/>
+    </bean>
+
+    <bean id="service43" class="io.heapy.sample.common2.DefaultService43">
+        <constructor-arg ref="service44"/>
+    </bean>
+
+    <bean id="service44" class="io.heapy.sample.common2.DefaultService44">
+        <constructor-arg ref="service45"/>
+    </bean>
+
+    <bean id="service45" class="io.heapy.sample.common2.DefaultService45">
+        <constructor-arg ref="service46"/>
+    </bean>
+
+    <bean id="service46" class="io.heapy.sample.common2.DefaultService46">
+        <constructor-arg ref="service47"/>
+    </bean>
+
+    <bean id="service47" class="io.heapy.sample.common2.DefaultService47">
+        <constructor-arg ref="service48"/>
+    </bean>
+
+    <bean id="service48" class="io.heapy.sample.common2.DefaultService48">
+        <constructor-arg ref="service49"/>
+    </bean>
+
+    <bean id="service49" class="io.heapy.sample.common2.DefaultService49">
+        <constructor-arg ref="service50"/>
+    </bean>
+
+    <bean id="service50" class="io.heapy.sample.common2.DefaultService50">
+        <constructor-arg ref="service51"/>
+    </bean>
+
+    <bean id="service51" class="io.heapy.sample.common2.DefaultService51">
+        <constructor-arg ref="service52"/>
+    </bean>
+
+    <bean id="service52" class="io.heapy.sample.common2.DefaultService52">
+        <constructor-arg ref="service53"/>
+    </bean>
+
+    <bean id="service53" class="io.heapy.sample.common2.DefaultService53">
+        <constructor-arg ref="service54"/>
+    </bean>
+
+    <bean id="service54" class="io.heapy.sample.common2.DefaultService54">
+        <constructor-arg ref="service55"/>
+    </bean>
+
+    <bean id="service55" class="io.heapy.sample.common2.DefaultService55">
+        <constructor-arg ref="service56"/>
+    </bean>
+
+    <bean id="service56" class="io.heapy.sample.common2.DefaultService56">
+        <constructor-arg ref="service57"/>
+    </bean>
+
+    <bean id="service57" class="io.heapy.sample.common2.DefaultService57">
+        <constructor-arg ref="service58"/>
+    </bean>
+
+    <bean id="service58" class="io.heapy.sample.common2.DefaultService58">
+        <constructor-arg ref="service59"/>
+    </bean>
+
+    <bean id="service59" class="io.heapy.sample.common2.DefaultService59">
+        <constructor-arg ref="service60"/>
+    </bean>
+
+    <bean id="service60" class="io.heapy.sample.common2.DefaultService60">
+        <constructor-arg ref="service61"/>
+    </bean>
+
+    <bean id="service61" class="io.heapy.sample.common2.DefaultService61">
+        <constructor-arg ref="service62"/>
+    </bean>
+
+    <bean id="service62" class="io.heapy.sample.common2.DefaultService62">
+        <constructor-arg ref="service63"/>
+    </bean>
+
+    <bean id="service63" class="io.heapy.sample.common2.DefaultService63">
+        <constructor-arg ref="service64"/>
+    </bean>
+
+    <bean id="service64" class="io.heapy.sample.common2.DefaultService64">
+        <constructor-arg ref="service65"/>
+    </bean>
+
+    <bean id="service65" class="io.heapy.sample.common2.DefaultService65">
+        <constructor-arg ref="service66"/>
+    </bean>
+
+    <bean id="service66" class="io.heapy.sample.common2.DefaultService66">
+        <constructor-arg ref="service67"/>
+    </bean>
+
+    <bean id="service67" class="io.heapy.sample.common2.DefaultService67">
+        <constructor-arg ref="service68"/>
+    </bean>
+
+    <bean id="service68" class="io.heapy.sample.common2.DefaultService68">
+        <constructor-arg ref="service69"/>
+    </bean>
+
+    <bean id="service69" class="io.heapy.sample.common2.DefaultService69">
+        <constructor-arg ref="service70"/>
+    </bean>
+
+    <bean id="service70" class="io.heapy.sample.common2.DefaultService70">
+        <constructor-arg ref="service71"/>
+    </bean>
+
+    <bean id="service71" class="io.heapy.sample.common2.DefaultService71">
+        <constructor-arg ref="service72"/>
+    </bean>
+
+    <bean id="service72" class="io.heapy.sample.common2.DefaultService72">
+        <constructor-arg ref="service73"/>
+    </bean>
+
+    <bean id="service73" class="io.heapy.sample.common2.DefaultService73">
+        <constructor-arg ref="service74"/>
+    </bean>
+
+    <bean id="service74" class="io.heapy.sample.common2.DefaultService74">
+        <constructor-arg ref="service75"/>
+    </bean>
+
+    <bean id="service75" class="io.heapy.sample.common2.DefaultService75">
+        <constructor-arg ref="service76"/>
+    </bean>
+
+    <bean id="service76" class="io.heapy.sample.common2.DefaultService76">
+        <constructor-arg ref="service77"/>
+    </bean>
+
+    <bean id="service77" class="io.heapy.sample.common2.DefaultService77">
+        <constructor-arg ref="service78"/>
+    </bean>
+
+    <bean id="service78" class="io.heapy.sample.common2.DefaultService78">
+        <constructor-arg ref="service79"/>
+    </bean>
+
+    <bean id="service79" class="io.heapy.sample.common2.DefaultService79">
+        <constructor-arg ref="service80"/>
+    </bean>
+
+    <bean id="service80" class="io.heapy.sample.common2.DefaultService80">
+        <constructor-arg ref="service81"/>
+    </bean>
+
+    <bean id="service81" class="io.heapy.sample.common2.DefaultService81">
+        <constructor-arg ref="service82"/>
+    </bean>
+
+    <bean id="service82" class="io.heapy.sample.common2.DefaultService82">
+        <constructor-arg ref="service83"/>
+    </bean>
+
+    <bean id="service83" class="io.heapy.sample.common2.DefaultService83">
+        <constructor-arg ref="service84"/>
+    </bean>
+
+    <bean id="service84" class="io.heapy.sample.common2.DefaultService84">
+        <constructor-arg ref="service85"/>
+    </bean>
+
+    <bean id="service85" class="io.heapy.sample.common2.DefaultService85">
+        <constructor-arg ref="service86"/>
+    </bean>
+
+    <bean id="service86" class="io.heapy.sample.common2.DefaultService86">
+        <constructor-arg ref="service87"/>
+    </bean>
+
+    <bean id="service87" class="io.heapy.sample.common2.DefaultService87">
+        <constructor-arg ref="service88"/>
+    </bean>
+
+    <bean id="service88" class="io.heapy.sample.common2.DefaultService88">
+        <constructor-arg ref="service89"/>
+    </bean>
+
+    <bean id="service89" class="io.heapy.sample.common2.DefaultService89">
+        <constructor-arg ref="service90"/>
+    </bean>
+
+    <bean id="service90" class="io.heapy.sample.common2.DefaultService90">
+        <constructor-arg ref="service91"/>
+    </bean>
+
+    <bean id="service91" class="io.heapy.sample.common2.DefaultService91">
+        <constructor-arg ref="service92"/>
+    </bean>
+
+    <bean id="service92" class="io.heapy.sample.common2.DefaultService92">
+        <constructor-arg ref="service93"/>
+    </bean>
+
+    <bean id="service93" class="io.heapy.sample.common2.DefaultService93">
+        <constructor-arg ref="service94"/>
+    </bean>
+
+    <bean id="service94" class="io.heapy.sample.common2.DefaultService94">
+        <constructor-arg ref="service95"/>
+    </bean>
+
+    <bean id="service95" class="io.heapy.sample.common2.DefaultService95">
+        <constructor-arg ref="service96"/>
+    </bean>
+
+    <bean id="service96" class="io.heapy.sample.common2.DefaultService96">
+        <constructor-arg ref="service97"/>
+    </bean>
+
+    <bean id="service97" class="io.heapy.sample.common2.DefaultService97">
+        <constructor-arg ref="service98"/>
+    </bean>
+
+    <bean id="service98" class="io.heapy.sample.common2.DefaultService98">
+        <constructor-arg ref="service99"/>
+    </bean>
+
+    <bean id="service99" class="io.heapy.sample.common2.DefaultService99">
+        <constructor-arg ref="service100"/>
+    </bean>
+
+    <bean id="service100" class="io.heapy.sample.common2.DefaultService100">
+        <constructor-arg ref="service101"/>
+    </bean>
+
+    <bean id="service101" class="io.heapy.sample.common2.DefaultService101">
+    </bean>
+</beans>

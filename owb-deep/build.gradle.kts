@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.owb.Main")
+    mainClass.set("io.heapy.owb.Main")
 }
 
 repositories {

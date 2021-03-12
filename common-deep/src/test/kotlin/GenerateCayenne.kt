@@ -16,7 +16,7 @@ fun generateProvider(it: Int) {
     Files.write(
         Paths.get("./cayennedi-deep/src/main/java/org/objectstyle/cayenne/ServiceProvider$it.java"),
         """
-            package org.objectstyle.cayenne;
+            package io.heapy.cayenne;
 
             import io.heapy.sample.common2.*;
             import org.apache.cayenne.di.DIRuntimeException;
