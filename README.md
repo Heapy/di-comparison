@@ -22,6 +22,9 @@ find . -name '*.tar' |xargs ls -lh |grep -v original |grep -v common
 ```
 # Execution time
 
+# JVM Baseline
+time (for i in {1..10}; do ./jvm/build/install/jvm/bin/jvm; done)
+
 # 2 classes
 
 time (for i in {1..10}; do ./baseline/build/install/baseline/bin/baseline; done)
@@ -34,6 +37,7 @@ time (for i in {1..10}; do ./owb/build/install/owb/bin/owb; done)
 time (for i in {1..10}; do ./spring/build/install/spring/bin/spring; done)
 time (for i in {1..10}; do ./springboot/build/install/springboot/bin/springboot; done)
 time (for i in {1..10}; do ./koin/build/install/koin/bin/koin; done)
+time (for i in {1..10}; do ./koin-reflect/build/install/koin-reflect/bin/koin-reflect; done)
 time (for i in {1..10}; do ./kodein/build/install/kodein/bin/kodein; done)
 
 # 100 classes
@@ -48,6 +52,7 @@ time (for i in {1..10}; do ./owb-deep/build/install/owb-deep/bin/owb-deep; done)
 time (for i in {1..10}; do ./spring-deep/build/install/spring-deep/bin/spring-deep; done)
 time (for i in {1..10}; do ./springboot-deep/build/install/springboot-deep/bin/springboot-deep; done)
 time (for i in {1..10}; do ./koin-deep/build/install/koin-deep/bin/koin-deep; done)
+time (for i in {1..10}; do ./koin-reflect-deep/build/install/koin-reflect-deep/bin/koin-reflect-deep; done)
 time (for i in {1..10}; do ./kodein-deep/build/install/kodein-deep/bin/kodein-deep; done)
 ```
 
@@ -81,6 +86,12 @@ cloc ./koin-deep/src
 cloc ./kodein-deep/src
 ```
 
+# Results for JVM (JDK 11)
+
+|DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, s|LoC|
+|----|----|----|----|
+|JVM Baseline|TODO|TODO|-|
+
 ## Results for 2 classes (JDK 11)
 
 |DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, s|LoC|
@@ -89,6 +100,7 @@ cloc ./kodein-deep/src
 |Dagger|1.7|1.41|37|
 |Cayenne DI|1.8|2.05|37|
 |Koin|1.8|2.56|16|
+|Koin-Reflect|TODO|TODO|TODO|
 |Kodein|2.4|2.93|17|
 |Bootique|4.2|4.31|52|
 |Guice|5.3|6.51|33|
@@ -104,6 +116,7 @@ cloc ./kodein-deep/src
 |Dagger|2.0|2.70|534|
 |Cayenne DI|2.0|3.70|1444|
 |Koin|2.1|3.92|113|
+|Koin-Reflect|TODO|TODO|TODO|
 |Kodein|2.9|5.58|114|
 |Bootique|4.3|5.79|549|
 |Guice|5.4|8.70|530|

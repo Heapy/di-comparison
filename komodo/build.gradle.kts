@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm").version("1.4.30-M1")
+    kotlin("jvm").version("1.4.31")
     application
 }
 
@@ -12,9 +12,9 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
     maven {
-        url = uri("https://dl.bintray.com/heapy/heap-dev")
+        url = uri("https://repo.kotlin.link")
     }
 }
 
@@ -22,5 +22,5 @@ dependencies {
     implementation(project(":common"))
 
     implementation(kotlin("stdlib-jdk8"))
-    implementation("io.heapy.komodo:komodo-di:0.1.0-development+000084")
+    implementation("io.heapy.komodo:komodo-di:0.1.0-development.000092")
 }

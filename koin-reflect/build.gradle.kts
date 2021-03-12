@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.baseline.MainKt")
+    mainClass.set("org.objectstyle.koin.MainKt")
 }
 
 repositories {
@@ -15,4 +15,6 @@ dependencies {
     implementation(project(":common"))
 
     implementation(kotlin("stdlib-jdk8"))
+    implementation("io.insert-koin:koin-core:3.0.1-beta-1")
+    implementation("io.insert-koin:koin-core-ext:3.0.1-beta-1")
 }

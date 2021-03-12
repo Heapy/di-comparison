@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm").version("1.4.30-M1")
+    kotlin("jvm").version("1.4.31")
     application
 }
 
@@ -8,12 +8,12 @@ application {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
     implementation(project(":common"))
 
     implementation(kotlin("stdlib-jdk8"))
-    implementation("org.koin:koin-core:2.2.1")
+    implementation("io.insert-koin:koin-core:3.0.1-beta-1")
 }

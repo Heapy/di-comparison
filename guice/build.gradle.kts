@@ -8,11 +8,11 @@ application {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
     implementation(project(":common"))
 
-    implementation("com.google.inject:guice:5.0.0-BETA-1")
+    implementation("com.google.inject:guice:5.0.1")
 }

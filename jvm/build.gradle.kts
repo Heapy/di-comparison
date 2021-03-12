@@ -4,7 +4,11 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.baseline.MainKt")
+    mainClass.set("org.objectstyle.jvm.MainKt")
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+    kotlinOptions.jvmTarget = "11"
 }
 
 repositories {
@@ -12,7 +16,5 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common"))
-
     implementation(kotlin("stdlib-jdk8"))
 }

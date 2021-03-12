@@ -8,7 +8,7 @@ application {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
     maven {
         url = uri("https://maven.objectstyle.org/nexus/content/repositories/bootique-snapshots/")
     }

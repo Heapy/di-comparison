@@ -8,11 +8,11 @@ application {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
     implementation(project(":common-deep"))
 
-    implementation("org.springframework:spring-context:5.2.5.RELEASE")
+    implementation("org.springframework:spring-context:5.3.4")
 }

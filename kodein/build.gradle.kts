@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm").version("1.4.30-M1")
+    kotlin("jvm").version("1.4.31")
     application
 }
 
@@ -12,7 +12,7 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {

@@ -16,4 +16,5 @@ dependencies {
 
     implementation(kotlin("stdlib-jdk8"))
     implementation("io.insert-koin:koin-core:3.0.1-beta-1")
+    implementation("io.insert-koin:koin-core-ext:3.0.1-beta-1")
 }
