@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.objectstyle.baseline.MainKt")
+    mainClass.set("io.heapy.baseline.MainKt")
 }
 
 repositories {

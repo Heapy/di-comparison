@@ -1,4 +1,4 @@
-package org.objectstyle.baseline
+package io.heapy.baseline
 
 import org.objectstyle.di.service.ServiceImpl
 import org.objectstyle.di.service.SubServiceImpl
