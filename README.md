@@ -50,6 +50,7 @@ OpenJDK 64-Bit Server VM Corretto-11.0.10.9.1 (build 11.0.10+9-LTS, mixed mode)
 |spring|5.60|356|23|
 |komodo|6.41|392|17|
 |owb|3.05|421|35|
+|spring-xml|5.60|430|19|
 |springboot|9.73|916|42|
 
 ## Results for 100 classes (JDK 11)
@@ -66,5 +67,6 @@ OpenJDK 64-Bit Server VM Corretto-11.0.10.9.1 (build 11.0.10+9-LTS, mixed mode)
 |guice-deep|5.56|407|530|
 |spring-deep|5.73|469|420|
 |komodo-deep|6.64|531|114|
+|spring-xml-deep|5.72|559|319|
 |owb-deep|3.18|584|532|
 |springboot-deep|9.85|1054|439|
