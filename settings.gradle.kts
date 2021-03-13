@@ -54,6 +54,9 @@ include("spring-xml-deep")
 include("spring-scan")
 include("spring-scan-deep")
 
+include("spring-scan-large")
+include("spring-scan-large-deep")
+
 include("quarkus")
 include("quarkus-deep")
 

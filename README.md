@@ -12,115 +12,59 @@ Processing".
 ```
 # Build
 ./gradlew clean build installDist distTar
+
+# Run
+TestRunner in common-deep/src/test/kotlin
 ```
 
-```
-# Get the file sizes
-find . -name '*.tar' |xargs ls -lh |grep -v original |grep -v common
-```
+## Test machine
 
 ```
-# Execution time
+MacBook Pro (16-inch, 2019)
+Processor: 2,6 GHz 6-Core Intel Core i7
+Memory: 32 GB 2667 MHz DDR4
 
-# JVM Baseline
-time (for i in {1..10}; do ./jvm/build/install/jvm/bin/jvm; done)
-
-# 2 classes
-
-time (for i in {1..10}; do ./baseline/build/install/baseline/bin/baseline; done)
-time (for i in {1..10}; do ./bootique/build/install/bootique/bin/bootique; done)
-time (for i in {1..10}; do ./cayennedi/build/install/cayennedi/bin/cayennedi; done)
-time (for i in {1..10}; do ./dagger/build/install/dagger/bin/dagger; done)
-time (for i in {1..10}; do ./guice/build/install/guice/bin/guice; done)
-time (for i in {1..10}; do ./komodo/build/install/komodo/bin/komodo; done)
-time (for i in {1..10}; do ./owb/build/install/owb/bin/owb; done)
-time (for i in {1..10}; do ./spring/build/install/spring/bin/spring; done)
-time (for i in {1..10}; do ./springboot/build/install/springboot/bin/springboot; done)
-time (for i in {1..10}; do ./koin/build/install/koin/bin/koin; done)
-time (for i in {1..10}; do ./koin-reflect/build/install/koin-reflect/bin/koin-reflect; done)
-time (for i in {1..10}; do ./kodein/build/install/kodein/bin/kodein; done)
-
-# 100 classes
-
-time (for i in {1..10}; do ./baseline-deep/build/install/baseline-deep/bin/baseline-deep; done)
-time (for i in {1..10}; do ./bootique-deep/build/install/bootique-deep/bin/bootique-deep; done)
-time (for i in {1..10}; do ./cayennedi-deep/build/install/cayennedi-deep/bin/cayennedi-deep; done)
-time (for i in {1..10}; do ./dagger-deep/build/install/dagger-deep/bin/dagger-deep; done)
-time (for i in {1..10}; do ./guice-deep/build/install/guice-deep/bin/guice-deep; done)
-time (for i in {1..10}; do ./komodo-deep/build/install/komodo-deep/bin/komodo-deep; done)
-time (for i in {1..10}; do ./owb-deep/build/install/owb-deep/bin/owb-deep; done)
-time (for i in {1..10}; do ./spring-deep/build/install/spring-deep/bin/spring-deep; done)
-time (for i in {1..10}; do ./springboot-deep/build/install/springboot-deep/bin/springboot-deep; done)
-time (for i in {1..10}; do ./koin-deep/build/install/koin-deep/bin/koin-deep; done)
-time (for i in {1..10}; do ./koin-reflect-deep/build/install/koin-reflect-deep/bin/koin-reflect-deep; done)
-time (for i in {1..10}; do ./kodein-deep/build/install/kodein-deep/bin/kodein-deep; done)
+openjdk 11.0.10 2021-01-19 LTS
+OpenJDK Runtime Environment Corretto-11.0.10.9.1 (build 11.0.10+9-LTS)
+OpenJDK 64-Bit Server VM Corretto-11.0.10.9.1 (build 11.0.10+9-LTS, mixed mode)
 ```
 
-```
-# Lines of code for 2 classes
-
-cloc ./baseline/src
-cloc ./bootique/src
-cloc ./cayennedi/src
-cloc ./dagger/src/main/java
-cloc ./guice/src
-cloc ./komodo/src
-cloc ./owb/src
-cloc ./spring/src
-cloc ./springboot/src
-cloc ./koin/src
-cloc ./kodein/src
-
-# Lines of code for 100 classes
-
-cloc ./baseline-deep/src
-cloc ./bootique-deep/src
-cloc ./cayennedi-deep/src
-cloc ./dagger-deep/src/main/java
-cloc ./guice-deep/src
-cloc ./komodo-deep/src
-cloc ./owb-deep/src
-cloc ./spring-deep/src
-cloc ./springboot-deep/src
-cloc ./koin-deep/src
-cloc ./kodein-deep/src
-```
-
-# Results for JVM (JDK 11)
+## Results for JVM (JDK 11)
 
 |DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, s|LoC|
 |----|----|----|----|
-|JVM Baseline|TODO|TODO|-|
+|jvm|1.69|111|2|
 
 ## Results for 2 classes (JDK 11)
-
-|DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, s|LoC|
+|DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, ms|LoC|
 |----|----|----|----|
-|Baseline|1.7|1.35|7|
-|Dagger|1.7|1.41|37|
-|Cayenne DI|1.8|2.05|37|
-|Koin|1.8|2.56|16|
-|Koin-Reflect|TODO|TODO|TODO|
-|Kodein|2.4|2.93|17|
-|Bootique|4.2|4.31|52|
-|Guice|5.3|6.51|33|
-|Komodo|6.4|7.56|17|
-|Spring|5.5|8.36|23|
-|OpenWebBeans|3.0|10.02|35|
-|Spring Boot|9.2|26.94|42|
+|kotlin-lazy|1.69|118|16|
+|baseline|1.69|130|7|
+|dagger|1.73|130|37|
+|cayennedi|1.76|158|37|
+|koin|1.85|160|16|
+|koin-reflect|1.88|170|17|
+|kodein|2.36|180|17|
+|bootique|4.18|229|52|
+|guice|5.42|331|33|
+|spring|5.60|356|23|
+|komodo|6.41|392|17|
+|owb|3.05|421|35|
+|springboot|9.73|916|42|
 
 ## Results for 100 classes (JDK 11)
-|DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, s|LoC|
+|DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, ms|LoC|
 |----|----|----|----|
-|Baseline|1.8|2.28|107|
-|Dagger|2.0|2.70|534|
-|Cayenne DI|2.0|3.70|1444|
-|Koin|2.1|3.92|113|
-|Koin-Reflect|TODO|TODO|TODO|
-|Kodein|2.9|5.58|114|
-|Bootique|4.3|5.79|549|
-|Guice|5.4|8.70|530|
-|Spring|5.5|12.81|420|
-|Komodo|6.6|12.87|114|
-|OpenWebBeans|3.2|16.16|532|
-|Spring Boot|9.4|30.42|439|
+|baseline-deep|1.83|142|107|
+|kotlin-lazy-deep|1.91|158|313|
+|dagger-deep|1.96|163|534|
+|cayennedi-deep|1.95|212|1444|
+|koin-deep|2.13|216|113|
+|koin-reflect-deep|2.51|241|114|
+|bootique-deep|4.31|280|549|
+|kodein-deep|2.92|284|114|
+|guice-deep|5.56|407|530|
+|spring-deep|5.73|469|420|
+|komodo-deep|6.64|531|114|
+|owb-deep|3.18|584|532|
+|springboot-deep|9.85|1054|439|
