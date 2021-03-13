@@ -21,6 +21,7 @@ val projects = listOf(
     "kotlin-lazy",
     "owb",
     "spring",
+    "spring-scan",
     "spring-xml",
     "springboot",
 //  TODO:
@@ -29,7 +30,6 @@ val projects = listOf(
 //    "quarkus",
 //    "spring-fu",
 //    "spring-index",
-//    "spring-scan",
 //    "spring-scan-large",
 //    "springboot-index",
 )

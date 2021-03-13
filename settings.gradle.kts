@@ -1,6 +1,9 @@
 include("common")
 include("common-deep")
 
+include("common-spring-annotations")
+include("common-spring-annotations-deep")
+
 include("jvm")
 
 include("baseline")
