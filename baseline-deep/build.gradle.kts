@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("io.heapy.baseline.MainKt")
+    mainClass = "io.heapy.baseline.MainKt"
 }
 
 repositories {

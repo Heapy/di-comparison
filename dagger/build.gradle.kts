@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("io.heapy.dagger.Main")
+    mainClass = "io.heapy.dagger.Main"
 }
 
 repositories {

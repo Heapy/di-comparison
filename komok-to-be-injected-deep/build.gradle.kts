@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("io.heapy.komodo.MainKt")
+    mainClass = "io.heapy.komodo.MainKt"
 }
 
 kotlin {

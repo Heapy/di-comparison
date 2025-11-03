@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("io.heapy.komok-to-be-injected.MainKt")
+    mainClass = "io.heapy.komok-to-be-injected.MainKt"
 }
 
 kotlin {

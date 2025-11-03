@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("io.heapy.springboot.Main")
+    mainClass = "io.heapy.springboot.Main"
 }
 
 repositories {

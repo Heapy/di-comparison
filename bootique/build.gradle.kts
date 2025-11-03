@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("io.heapy.bootique4.Main")
+    mainClass = "io.heapy.bootique4.Main"
 }
 
 repositories {

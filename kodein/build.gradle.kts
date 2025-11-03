@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("io.heapy.kodein.MainKt")
+    mainClass = "io.heapy.kodein.MainKt"
 }
 
 kotlin {

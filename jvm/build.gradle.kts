@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("io.heapy.jvm.MainKt")
+    mainClass = "io.heapy.jvm.MainKt"
 }
 
 kotlin {
