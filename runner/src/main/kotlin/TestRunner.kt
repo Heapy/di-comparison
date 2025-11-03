@@ -14,6 +14,7 @@ val projects = listOf(
     "bootique",
     "cayennedi",
     "dagger",
+    "dimension",
     "guice",
     "kodein",
     "koin",
@@ -55,7 +56,7 @@ fun main() {
 }
 
 fun calculate(prj: String): TestResult {
-    val iterations = 1
+    val iterations = 100
 
     val artifactPath = Paths.get("$prj/build/distributions/$prj.tar")
     val size = Files.size(artifactPath)
