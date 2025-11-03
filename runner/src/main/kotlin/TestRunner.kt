@@ -21,7 +21,7 @@ val projects = listOf(
     "koin-reflect",
     "komok-to-be-injected",
     "kotlin-lazy",
-    // "owb", TODO: Update to support Java 25
+    "owb",
     "spring",
     "spring-scan",
     "spring-xml",
@@ -77,7 +77,6 @@ fun calculate(prj: String): TestResult {
                 .also { proc ->
                     proc.environment()["JAVA_OPTS"] = "-Xms32m -Xmx32m"
                 }
-                .inheritIO()
                 .command(command)
                 .start()
                 .waitFor()
