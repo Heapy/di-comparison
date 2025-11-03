@@ -14,5 +14,5 @@ repositories {
 dependencies {
     implementation(project(":common-deep"))
 
-    implementation("com.google.inject:guice:5.0.1")
+    implementation("com.google.inject:guice:7.0.0")
 }

@@ -14,6 +14,6 @@ repositories {
 dependencies {
     implementation(project(":common"))
 
-    implementation("com.google.dagger:dagger:2.30.1")
-    annotationProcessor("com.google.dagger:dagger-compiler:2.30.1")
+    implementation("com.google.dagger:dagger:2.57.2")
+    annotationProcessor("com.google.dagger:dagger-compiler:2.57.2")
 }

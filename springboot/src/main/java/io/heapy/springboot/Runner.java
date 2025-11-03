@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Runner implements CommandLineRunner {
 
-    private Service service;
+    private final Service service;
 
     public Runner(Service service) {
         this.service = service;

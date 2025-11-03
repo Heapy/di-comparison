@@ -14,5 +14,5 @@ repositories {
 dependencies {
     implementation(project(":common-spring-annotations"))
 
-    implementation("org.springframework:spring-context:5.3.4")
+    implementation("org.springframework:spring-context:7.0.0-RC3")
 }

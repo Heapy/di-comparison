@@ -14,5 +14,5 @@ repositories {
 dependencies {
     implementation(project(":common"))
 
-    implementation("org.springframework.boot:spring-boot-starter:2.4.3")
+    implementation("org.springframework.boot:spring-boot-starter:4.0.0-RC1")
 }

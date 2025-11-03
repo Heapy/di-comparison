@@ -14,5 +14,5 @@ repositories {
 dependencies {
     implementation(project(":common"))
 
-    implementation("org.apache.cayenne:cayenne-di:4.1.RC2")
+    implementation("org.apache.cayenne:cayenne-di:5.0-M1")
 }

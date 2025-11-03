@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm").version("1.4.31")
+    kotlin("jvm").version("2.3.0-Beta2")
     application
 }
 
@@ -13,6 +13,4 @@ repositories {
 
 dependencies {
     implementation(project(":common-deep"))
-
-    implementation(kotlin("stdlib-jdk8"))
 }

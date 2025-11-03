@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm").version("1.4.31")
+    kotlin("jvm").version("2.3.0-Beta2")
     application
 }
 
@@ -15,5 +15,5 @@ dependencies {
     implementation(project(":common"))
 
     implementation(kotlin("stdlib-jdk8"))
-    implementation("io.insert-koin:koin-core:3.0.1-beta-1")
+    implementation("io.insert-koin:koin-core:4.1.1")
 }

@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm").version("1.4.31")
+    kotlin("jvm").version("2.3.0-Beta2")
     application
 }
 
@@ -7,8 +7,8 @@ application {
     mainClass.set("io.heapy.klazy.MainKt")
 }
 
-tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-    kotlinOptions.jvmTarget = "11"
+kotlin {
+    jvmToolchain(25)
 }
 
 repositories {

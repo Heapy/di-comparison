@@ -1,5 +1,6 @@
 plugins {
-    java
+    kotlin("jvm").version("2.3.0-Beta2")
+    kotlin("kapt").version("2.3.0-Beta2")
     application
 }
 
@@ -12,8 +13,8 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common-deep"))
+    implementation(project(":common-spring-annotations-deep"))
 
-    implementation("org.springframework:spring-context:5.3.4")
-    annotationProcessor("org.springframework:spring-context-indexer:5.3.4")
+    implementation("org.springframework:spring-context:7.0.0-RC3")
+    annotationProcessor("org.springframework:spring-context-indexer:7.0.0-RC3")
 }

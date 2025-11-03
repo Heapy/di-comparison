@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm").version("1.4.31")
+    kotlin("jvm").version("2.3.0-Beta2")
 }
 
 repositories {
@@ -8,5 +8,5 @@ repositories {
 
 dependencies {
     api(kotlin("stdlib-jdk8"))
-    implementation("org.springframework:spring-context:5.3.4")
+    implementation("org.springframework:spring-context:7.0.0-RC3")
 }

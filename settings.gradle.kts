@@ -1,3 +1,5 @@
+include("runner")
+
 include("common")
 include("common-deep")
 
@@ -18,8 +20,8 @@ include("koin-deep")
 include("koin-reflect")
 include("koin-reflect-deep")
 
-include("komodo")
-include("komodo-deep")
+include("komok-to-be-injected")
+include("komok-to-be-injected-deep")
 
 include("bootique")
 include("bootique-deep")
@@ -42,14 +44,14 @@ include("springboot-deep")
 include("owb")
 include("owb-deep")
 
-include("springboot-index")
-include("springboot-index-deep")
+//include("springboot-index")
+//include("springboot-index-deep")
 
 include("spring-index")
 include("spring-index-deep")
 
-include("spring-fu")
-include("spring-fu-deep")
+//include("spring-fu")
+//include("spring-fu-deep")
 
 include("spring-xml")
 include("spring-xml-deep")
@@ -57,17 +59,17 @@ include("spring-xml-deep")
 include("spring-scan")
 include("spring-scan-deep")
 
-include("spring-scan-large")
-include("spring-scan-large-deep")
+//include("spring-scan-large")
+//include("spring-scan-large-deep")
 
-include("quarkus")
-include("quarkus-deep")
+//include("quarkus")
+//include("quarkus-deep")
 
-include("micronaut")
-include("micronaut-deep")
+//include("micronaut")
+//include("micronaut-deep")
 
-include("helidon")
-include("helidon-deep")
+//include("helidon")
+//include("helidon-deep")
 
 include("kotlin-lazy")
 include("kotlin-lazy-deep")

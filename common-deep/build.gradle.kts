@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm").version("1.4.31")
+    kotlin("jvm").version("2.3.0-Beta2")
 }
 
 repositories {
@@ -8,5 +8,4 @@ repositories {
 
 dependencies {
     api(kotlin("stdlib-jdk8"))
-    testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.2")
 }

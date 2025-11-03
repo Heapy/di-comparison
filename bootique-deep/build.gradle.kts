@@ -4,18 +4,15 @@ plugins {
 }
 
 application {
-    mainClass.set("io.heapy.bootique2.Main")
+    mainClass.set("io.heapy.bootique4.Main")
 }
 
 repositories {
     mavenCentral()
-    maven {
-        url = uri("https://maven.objectstyle.org/nexus/content/repositories/bootique-snapshots/")
-    }
 }
 
 dependencies {
     implementation(project(":common-deep"))
 
-    implementation("io.bootique:bootique:2.0-SNAPSHOT")
+    implementation("io.bootique:bootique:4.0-M1")
 }
