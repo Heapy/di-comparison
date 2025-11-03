@@ -1,4 +1,4 @@
-package io.heapy.sample.common2
+package io.heapy.baseline
 
 interface Service {
     fun name(): String

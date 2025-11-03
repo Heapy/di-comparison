@@ -29,45 +29,46 @@ openjdk 25.0.1 2025-10-21 LTS
 OpenJDK Runtime Environment Corretto-25.0.1.8.1 (build 25.0.1+8-LTS)
 OpenJDK 64-Bit Server VM Corretto-25.0.1.8.1 (build 25.0.1+8-LTS, mixed mode, sharing)
 ```
+|DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, ms|LoC|
+|----|----|----|----|
+|jvm|1.75|269|2|
 
 |DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, ms|LoC|
 |----|----|----|----|
-|jvm|1.75|55|2|
+|komok-to-be-injected|2.48|233|33|
+|owb|3.11|235|49|
+|kotlin-lazy|1.75|243|31|
+|spring|6.78|246|38|
+|koin-reflect|2.22|247|33|
+|cayennedi|1.82|249|49|
+|spring-scan|6.78|250|34|
+|kodein|3.43|252|32|
+|koin|2.22|252|31|
+|springboot|10.33|253|56|
+|dagger|1.82|254|51|
+|baseline|1.75|256|24|
+|guice|5.62|260|47|
+|spring-xml|6.78|276|37|
+|bootique|4.69|279|63|
+|springboot-index|10.33|285|46|
+|spring-index|6.78|333|34|
 
 |DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, ms|LoC|
 |----|----|----|----|
-|baseline|1.76|38|7|
-|dagger|1.83|43|37|
-|komok-to-be-injected|2.48|46|18|
-|kodein|3.44|55|17|
-|kotlin-lazy|1.76|56|16|
-|cayennedi|1.82|63|37|
-|koin|2.22|80|16|
-|koin-reflect|2.23|82|18|
-|bootique|4.69|91|49|
-|owb|3.11|109|35|
-|guice|5.63|118|33|
-|spring-xml|6.78|150|19|
-|spring|6.78|151|23|
-|spring-index|6.78|158|13|
-|spring-scan|6.78|163|13|
-|springboot|10.33|396|42|
-
-|DI|Jar w/Deps Size, Mb|:arrow_down: Exec time, ms|LoC|
-|----|----|----|----|
-|komok-to-be-injected-deep|2.63|51|315|
-|kodein-deep|3.87|51|114|
-|kotlin-lazy-deep|1.90|61|313|
-|dagger-deep|2.06|63|534|
-|baseline-deep|1.89|67|107|
-|cayennedi-deep|2.01|98|1444|
-|koin-reflect-deep|2.53|101|115|
-|koin-deep|2.38|108|113|
-|owb-deep|3.25|110|532|
-|bootique-deep|4.82|128|446|
-|guice-deep|5.76|148|530|
-|spring-xml-deep|6.91|189|319|
-|spring-deep|6.92|198|420|
-|spring-scan-deep|6.92|237|13|
-|spring-index-deep|6.92|238|14|
-|springboot-deep|10.46|464|439|
+|cayennedi-deep|2.00|231|1953|
+|spring-deep|6.91|238|1032|
+|koin-reflect-deep|2.52|241|727|
+|owb-deep|3.23|245|1143|
+|komok-to-be-injected-deep|2.62|248|927|
+|spring-xml-deep|6.90|250|931|
+|springboot-deep|10.46|251|1050|
+|baseline-deep|1.88|253|719|
+|kodein-deep|3.86|254|726|
+|kotlin-lazy-deep|1.89|256|925|
+|springboot-index-deep|10.46|257|739|
+|koin-deep|2.37|264|725|
+|guice-deep|5.75|266|1141|
+|spring-scan-deep|6.91|267|728|
+|bootique-deep|4.82|270|1057|
+|spring-index-deep|6.91|274|729|
+|dagger-deep|2.05|347|1145|

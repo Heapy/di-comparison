@@ -1,6 +1,5 @@
 package io.heapy.koin
 
-import io.heapy.sample.common2.*
 import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.bind
 import org.koin.dsl.koinApplication

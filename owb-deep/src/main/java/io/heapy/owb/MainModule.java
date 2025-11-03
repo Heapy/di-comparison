@@ -1,10 +1,7 @@
 package io.heapy.owb;
 
-import io.heapy.sample.common2.*;
-
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
-
 
 @ApplicationScoped
 public class MainModule {

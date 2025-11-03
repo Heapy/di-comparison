@@ -12,8 +12,6 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common-deep"))
-
     implementation("org.apache.geronimo.specs:geronimo-annotation_1.3_spec:1.0")
     implementation("org.apache.geronimo.specs:geronimo-atinject_1.0_spec:1.0")
     implementation("org.apache.geronimo.specs:geronimo-jcdi_2.0_spec:1.0")

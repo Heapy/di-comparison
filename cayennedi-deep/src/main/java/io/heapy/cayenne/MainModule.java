@@ -1,6 +1,5 @@
 package io.heapy.cayenne;
 
-import io.heapy.sample.common2.*;
 import org.apache.cayenne.di.Binder;
 import org.apache.cayenne.di.Module;
 

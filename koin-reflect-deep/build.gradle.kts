@@ -12,7 +12,5 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common-deep"))
-
     implementation("io.insert-koin:koin-core:4.1.1")
 }

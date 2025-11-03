@@ -1,6 +1,5 @@
 package io.heapy.springboot;
 
-import io.heapy.sample.common2.Service;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

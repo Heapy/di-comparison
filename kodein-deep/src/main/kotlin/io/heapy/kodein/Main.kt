@@ -1,6 +1,5 @@
 package io.heapy.kodein
 
-import io.heapy.sample.common2.*
 import org.kodein.di.DI
 import org.kodein.di.bind
 import org.kodein.di.direct

@@ -12,7 +12,5 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common-deep"))
-
     implementation("org.apache.cayenne:cayenne-di:5.0-M1")
 }

@@ -16,7 +16,5 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common-deep"))
-
     implementation("org.kodein.di:kodein-di-jvm:7.28.0")
 }

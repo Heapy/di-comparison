@@ -12,7 +12,5 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common-deep"))
-
     implementation("org.springframework.boot:spring-boot-starter:4.0.0-RC1")
 }

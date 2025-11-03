@@ -2,7 +2,6 @@ package io.heapy.komok
 
 import io.heapy.komok.tech.di.delegate.MutableBean
 import io.heapy.komok.tech.di.delegate.bean
-import io.heapy.sample.common2.*
 
 fun main() {
     println(MainModule().s.value.name())

@@ -1,7 +1,6 @@
 package io.heapy.dagger;
 
 import dagger.Component;
-import io.heapy.sample.common2.Service;
 
 import javax.inject.Singleton;
 

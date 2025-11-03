@@ -1,7 +1,5 @@
 package io.heapy.klazy
 
-import io.heapy.sample.common2.*
-
 fun main() {
     println(Main().s.name())
 }

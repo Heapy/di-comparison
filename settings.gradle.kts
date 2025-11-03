@@ -1,9 +1,5 @@
 include("runner")
 
-include("common-deep")
-
-include("common-spring-annotations-deep")
-
 include("jvm")
 
 include("baseline")
@@ -27,6 +23,9 @@ include("bootique-deep")
 include("dagger")
 include("dagger-deep")
 
+include("dimension")
+include("dimension-deep")
+
 include("guice")
 include("guice-deep")
 
@@ -42,8 +41,8 @@ include("springboot-deep")
 include("owb")
 include("owb-deep")
 
-//include("springboot-index")
-//include("springboot-index-deep")
+include("springboot-index")
+include("springboot-index-deep")
 
 include("spring-index")
 include("spring-index-deep")

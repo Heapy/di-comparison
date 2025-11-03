@@ -1,7 +1,5 @@
 package io.heapy.baseline
 
-import io.heapy.sample.common2.*
-
 fun main() {
     val s101 = DefaultService101()
     val s100 = DefaultService100(s101)

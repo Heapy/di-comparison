@@ -1,7 +1,6 @@
 package io.heapy.guice;
 
 import com.google.inject.Guice;
-import io.heapy.sample.common2.Service;
 
 public class Main {
 

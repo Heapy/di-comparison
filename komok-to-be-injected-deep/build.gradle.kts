@@ -16,7 +16,5 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common-deep"))
-
     implementation("io.heapy.komok:komok-tech-to-be-injected:1.0.13")
 }

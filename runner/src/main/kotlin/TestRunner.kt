@@ -9,6 +9,7 @@ import java.util.Locale
 import kotlin.system.measureNanoTime
 
 val projects = listOf(
+    "springboot-index",
     "baseline",
     "bootique",
     "cayennedi",
@@ -19,19 +20,19 @@ val projects = listOf(
     "koin-reflect",
     "komok-to-be-injected",
     "kotlin-lazy",
-    "owb",
+    // "owb", TODO: Update to support Java 25
     "spring",
     "spring-scan",
     "spring-xml",
     "springboot",
     "spring-index",
+
 //  TODO:
 //    "helidon",
 //    "micronaut",
 //    "quarkus",
 //    "spring-fu",
 //    "spring-scan-large",
-//    "springboot-index",
 )
 
 data class TestResult(
@@ -54,7 +55,7 @@ fun main() {
 }
 
 fun calculate(prj: String): TestResult {
-    val iterations = 50
+    val iterations = 1
 
     val artifactPath = Paths.get("$prj/build/distributions/$prj.tar")
     val size = Files.size(artifactPath)
@@ -70,10 +71,17 @@ fun calculate(prj: String): TestResult {
     val nanos = measureNanoTime {
         (1..iterations).forEach { iter ->
             println("$prj-$iter")
-            ProcessBuilder()
-                .command("$prj/build/install/$prj/bin/$prj")
+            val command = "$prj/build/install/$prj/bin/$prj"
+            val result = ProcessBuilder()
+                .also { proc ->
+                    proc.environment()["JAVA_OPTS"] = "-Xms32m -Xmx32m"
+                }
+                .inheritIO()
+                .command(command)
                 .start()
                 .waitFor()
+
+            require(result == 0) { "exit code $result for $prj ($command)" }
         }
     }
 
@@ -88,12 +96,12 @@ fun calculate(prj: String): TestResult {
 @JsonIgnoreProperties(ignoreUnknown = true)
 data class ClocResult(
     @param:JsonProperty("SUM")
-    val sum: ClocSumResult
+    val sum: ClocSumResult,
 )
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 data class ClocSumResult(
-    val code: Int
+    val code: Int,
 )
 
 fun List<TestResult>.toTable(): String {

@@ -2,7 +2,7 @@ package io.heapy.dagger;
 
 import dagger.Module;
 import dagger.Provides;
-import io.heapy.sample.common2.*;
+
 
 import javax.inject.Singleton;
 

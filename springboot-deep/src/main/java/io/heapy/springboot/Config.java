@@ -1,6 +1,5 @@
 package io.heapy.springboot;
 
-import io.heapy.sample.common2.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

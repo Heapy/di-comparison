@@ -4,8 +4,6 @@ import io.bootique.BQCoreModule;
 import io.bootique.BQModule;
 import io.bootique.di.Binder;
 import io.bootique.di.Provides;
-import io.heapy.sample.common2.*;
-
 
 public class MainModule implements BQModule {
 
