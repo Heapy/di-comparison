@@ -7,6 +7,5 @@ repositories {
 }
 
 dependencies {
-    api(kotlin("stdlib-jdk8"))
     implementation("org.springframework:spring-context:7.0.0-RC3")
 }

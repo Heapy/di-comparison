@@ -1,5 +1,5 @@
 plugins {
-    java
+    kotlin("jvm").version("2.3.0-Beta2")
     application
 }
 
@@ -12,7 +12,5 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common"))
-
     implementation("com.google.inject:guice:7.0.0")
 }

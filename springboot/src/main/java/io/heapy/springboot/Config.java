@@ -1,9 +1,5 @@
 package io.heapy.springboot;
 
-import io.heapy.di.service.Service;
-import io.heapy.di.service.ServiceImpl;
-import io.heapy.di.service.SubService;
-import io.heapy.di.service.SubServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

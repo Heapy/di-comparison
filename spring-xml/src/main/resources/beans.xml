@@ -5,10 +5,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="service" class="io.heapy.di.service.ServiceImpl">
+    <bean id="service" class="io.heapy.spring.ServiceImpl">
         <constructor-arg ref="subService"/>
     </bean>
 
-    <bean id="subService" class="io.heapy.di.service.SubServiceImpl">
+    <bean id="subService" class="io.heapy.spring.SubServiceImpl">
     </bean>
 </beans>

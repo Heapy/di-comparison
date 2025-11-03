@@ -1,5 +1,5 @@
 plugins {
-    java
+    kotlin("jvm").version("2.3.0-Beta2")
     application
 }
 
@@ -12,8 +12,6 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common"))
-
     implementation("org.apache.geronimo.specs:geronimo-annotation_1.3_spec:1.0")
     implementation("org.apache.geronimo.specs:geronimo-atinject_1.0_spec:1.0")
     implementation("org.apache.geronimo.specs:geronimo-jcdi_2.0_spec:1.0")

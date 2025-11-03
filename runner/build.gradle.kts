@@ -8,7 +8,6 @@ repositories {
 }
 
 dependencies {
-    api(kotlin("stdlib-jdk8"))
     implementation("tools.jackson.module:jackson-module-kotlin:3.0.1")
 }
 

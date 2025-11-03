@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass = "io.heapy.komodo.MainKt"
+    mainClass = "io.heapy.komok.MainKt"
 }
 
 kotlin {
@@ -18,6 +18,5 @@ repositories {
 dependencies {
     implementation(project(":common-deep"))
 
-    implementation(kotlin("stdlib-jdk8"))
     implementation("io.heapy.komok:komok-tech-to-be-injected:1.0.13")
 }

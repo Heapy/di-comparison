@@ -1,6 +1,5 @@
 package io.heapy.spring;
 
-import io.heapy.di.service.Service;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;

@@ -13,8 +13,6 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common-spring-annotations"))
-
     implementation("org.springframework:spring-context:7.0.0-RC3")
     annotationProcessor("org.springframework:spring-context-indexer:7.0.0-RC3")
 }

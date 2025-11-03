@@ -1,7 +1,6 @@
 package io.heapy.cayenne;
 
 import org.apache.cayenne.di.DIBootstrap;
-import io.heapy.di.service.Service;
 
 public class Main {
 

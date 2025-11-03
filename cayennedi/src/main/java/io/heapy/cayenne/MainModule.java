@@ -2,9 +2,6 @@ package io.heapy.cayenne;
 
 import org.apache.cayenne.di.Binder;
 import org.apache.cayenne.di.Module;
-import io.heapy.di.service.Service;
-import io.heapy.di.service.SubService;
-import io.heapy.di.service.SubServiceImpl;
 
 public class MainModule implements Module {
 

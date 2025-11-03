@@ -1,6 +1,5 @@
 package io.heapy.spring
 
-import io.heapy.di.service.Service
 import org.springframework.context.support.GenericXmlApplicationContext
 
 fun main() {

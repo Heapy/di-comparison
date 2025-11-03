@@ -1,5 +1,5 @@
 plugins {
-    java
+    kotlin("jvm").version("2.3.0-Beta2")
     application
 }
 
@@ -12,8 +12,6 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common"))
-
     implementation("com.google.dagger:dagger:2.57.2")
     annotationProcessor("com.google.dagger:dagger-compiler:2.57.2")
 }

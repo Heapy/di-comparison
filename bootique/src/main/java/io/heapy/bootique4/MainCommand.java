@@ -3,7 +3,6 @@ package io.heapy.bootique4;
 import io.bootique.cli.Cli;
 import io.bootique.command.Command;
 import io.bootique.command.CommandOutcome;
-import io.heapy.di.service.Service;
 import jakarta.inject.Inject;
 import jakarta.inject.Provider;
 

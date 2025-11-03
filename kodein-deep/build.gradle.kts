@@ -18,6 +18,5 @@ repositories {
 dependencies {
     implementation(project(":common-deep"))
 
-    implementation(kotlin("stdlib-jdk8"))
     implementation("org.kodein.di:kodein-di-jvm:7.28.0")
 }

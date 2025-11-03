@@ -5,10 +5,6 @@ import org.kodein.di.bind
 import org.kodein.di.direct
 import org.kodein.di.instance
 import org.kodein.di.singleton
-import io.heapy.di.service.Service
-import io.heapy.di.service.ServiceImpl
-import io.heapy.di.service.SubService
-import io.heapy.di.service.SubServiceImpl
 
 fun main() {
     val s = DI {

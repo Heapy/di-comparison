@@ -12,8 +12,5 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":common"))
-
-    implementation(kotlin("stdlib-jdk8"))
     implementation("io.insert-koin:koin-core:4.1.1")
 }

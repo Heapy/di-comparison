@@ -4,10 +4,6 @@ import io.bootique.BQCoreModule;
 import io.bootique.BQModule;
 import io.bootique.di.Binder;
 import io.bootique.di.Provides;
-import io.heapy.di.service.Service;
-import io.heapy.di.service.ServiceImpl;
-import io.heapy.di.service.SubService;
-import io.heapy.di.service.SubServiceImpl;
 
 public class MainModule implements BQModule {
 

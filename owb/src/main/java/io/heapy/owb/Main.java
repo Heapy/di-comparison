@@ -1,11 +1,8 @@
 package io.heapy.owb;
 
-
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
 import javax.enterprise.inject.spi.CDI;
-
-import io.heapy.di.service.Service;
 
 public class Main {
 

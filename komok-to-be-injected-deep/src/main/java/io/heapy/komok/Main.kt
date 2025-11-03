@@ -1,4 +1,4 @@
-package io.heapy.komok_to_be_injected
+package io.heapy.komok
 
 import io.heapy.komok.tech.di.delegate.MutableBean
 import io.heapy.komok.tech.di.delegate.bean
