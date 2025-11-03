@@ -13,5 +13,5 @@ fun main() {
 
     val app = ServiceLocator
         .get(Service::class.java)
-    app.doIt()
+    println(app.doIt())
 }
