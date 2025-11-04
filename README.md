@@ -1,6 +1,12 @@
 # DI Containers Comparison
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 Comparing a simple app varieties on different DI containers.
+
+## Citation
+
+If you use this project in your research or work, please provide appropriate credit by citing this repository or linking to it.
 
 ## IntelliJ IDEA Setup
 
